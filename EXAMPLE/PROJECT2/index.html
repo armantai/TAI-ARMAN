@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+             background: linear-gradient(90deg,rgba(219, 255, 207, 1) 0%, rgba(95, 130, 123, 1) 100%);
+             border: 5px solid black;
+        }
+
+        .display{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .display-1{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer{
+            max-width: 100%;
+        }
+
+        .display-2{
+            display: flex;
+            margin-left: 50px;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .display-3{
+            display: flex;
+        }
+
+        .display-4{
+            display:flex ;
+            gap: 40px;
+            margin-left: 50px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            width: 200px;
+            min-height: 220px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            background-position-x: 190px;
+            background-image: url(https://th.bing.com/th/id/OIP.hItpJ6etjl3sPgkuZEFZhgHaJQ?w=143&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3);
+            img{
+                border-radius: 15px;
+            }
+        }
+
+        .card2{
+            width: 400px;
+            height: 500px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        } 
+        .card3{
+            width: 450px;
+            height: 350px;
+            margin-bottom: 20px;
+        }
+
+        .card-1{
+            background-position-x: 220px;
+            background-image: url(https://th.bing.com/th/id/OIP.hcY8WIIkLVgqNinn86pyewHaHa?w=184&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3);
+        }
+        .card-2{
+            background-position-x: 220px;
+            background-position-y: 300px;
+            background-image: url(https://tse3.mm.bing.net/th/id/OIP.sXv5er1eTMbhwv1UXPSCSwHaLH?r=0&pid=ImgDet&w=184&h=276&c=7&dpr=1.3&o=7&rm=3);
+        }
+        .card-3{
+            background-position-x: 300px;
+            background-image: url(https://th.bing.com/th/id/OIP.mpqXQncBSFPKL21jcTdeZAHaEK?w=306&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+        }
+        .card-4{
+            background-position-x: 220px;
+            background-image: url(https://th.bing.com/th/id/OIP.1sP8amOYl-H53F4Pp1xYhgHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+        }
+
+        .card-3-1{
+            background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_440,c_limit/a3c971bc-bc0a-4c0c-8bdf-e807a3027e53/nike-just-do-it.jpg);
+        }
+        .card-3-2{
+            background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_440,c_limit/e4695209-3f23-4a05-a9f9-d0edde31b653/nike-just-do-it.jpg);
+        }
+        .card-3-3{
+            background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_440,c_limit/38ed4b8e-9cfc-4e66-9ddd-02a52314eed9/nike-just-do-it.jpg);
+        }
+
+
+        .button{
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 70px;
+            height: 30px;
+        }
+
+        .button:hover{
+            transform:scale(1.1) ;
+        }
+
+        .button-1{
+                background-color: white;
+                color: black;
+                height: 30px;
+                border-radius: 20px;
+                margin-top: 20px;
+                width: 70px;
+        }
+
+        .button-1:hover{
+            transform: scale(1.1);
+        }
+
+        .button-2{
+            background-color: white;
+            color: black;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+        }
+
+         .button-3{
+                background-color: white;
+                color: black;
+                height: 30px;
+                width: 80px;
+                margin-top: 300px;
+                margin-left: 50px;
+                border-radius: 20px;
+        }
+
+        .button-3:hover{
+            transform: scale(1.1);
+        }
+
+        .button-4{
+                background-color: white;
+                color: black;
+                height: 30px;
+                border-radius: 20px;
+                margin-top: 20px;
+                width: 100px;
+                margin-bottom: 20px;
+        }
+
+        .button-4:hover{
+            transform: scale(1.1);
+        }
+
+        .background-image-1{
+            color: white;
+            width: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://th.bing.com/th/id/OIP.Qko7oZQj5mkhYoZ1ePIVqgHaEK?w=320&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3);
+        }
+        .background-image-2{
+            color: white;
+            width: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://th.bing.com/th/id/OIP.6dE6PUZZlIDZxoTKX39e5wHaE7?w=208&h=139&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3);
+        }
+
+        .background-image-3{
+            color: white;
+            width: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(https://th.bing.com/th/id/OIP.afqGFx9RYEBR3UTMLBiQrwAAAA?w=280&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3);
+        }
+
+        .background-image-4{
+            color: white;
+            width: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(data:image/webp;base64,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);
+        }
+       
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .header2{
+            display: flex;
+            justify-content: space-between;
+        }
+        .header3{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-1{
+            width: 100%;
+            display: flex;
+        }
+        @media(max-width:900px){
+                .section-1{
+                    display: block;
+                }
+        }
+        
+        .section-1-1{
+            width: 100%;
+            max-height: 600px;
+        }
+        .section-1-2{
+            width: 100%;
+            max-height: 600px;
+        }
+        .image{
+            height: 50px;
+            margin-left: 20px;
+        }
+        .image2{
+            height: 20px;
+            margin-left: 20px;  
+            margin-top: 20px;
+        }
+        .image3{
+            display: flex;
+            width: 100%;
+            min-height: 500px;
+        }
+
+        .image4{
+            background-image: url(https://cdn.mos.cms.futurecdn.net/LRbyzqL4StAfNoRk7jEHJT.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 600px;
+            max-width: 100%;
+        }
+
+        .image5{
+            height: 400px;
+            max-width: 400px;
+
+        }
+        @media(max-width: 900px){
+            .image3{
+                display: block;
+            }
+            .background-image-1{
+                width: 100%;
+                min-height: 500px;
+            }
+            .background-image-2{
+                width: 100%;
+                  min-height: 500px;
+            }
+             .background-image-3{
+                width: 100%;
+                min-height: 500px;
+            }
+            .background-image-4{
+                width: 100%;
+                  min-height: 500px;
+            }
+        }
+        .font{
+            text-align: center;
+        }
+
+        .font1{
+            font-size: 55px;
+            margin-top: 20px;
+        }
+
+       .font2{
+        margin-left: 20px;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+       }
+
+       .font3{
+        text-align: center;
+        padding-top: 180px;
+        color: white;
+        font-size: 30px;
+       }
+
+       .font4{
+        font-size: 20px;
+        margin-right: 20px;
+       }
+
+       .font5{
+        font-size: 20px;
+        margin-top: 20px;
+       }
+
+       .font6{
+        margin-top: 10px;
+       }
+
+       .font7{
+        margin-left: 20px;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       }
+
+       .font8{
+        font-size: 30px;
+       }
+
+       .font9{
+        margin-top: 20px;
+       }
+
+       .left-1-1{
+        margin-left: 20px;
+        font-size: 20px;
+        padding-top: 350px;
+       }
+       .left-1-2{
+        margin-left: 20px;
+        font-size: 20px;
+        padding-top: 330px;
+       }
+
+       .left-1-3{
+        margin-left: 20px;
+        font-size: 20px;
+        padding-top: 300px;
+       }
+
+       @media(max-width: 900px){
+        .image3{
+            display: block;
+        }
+       }
+
+       .left-2{
+        margin-left: 20px;
+       }
+        
+       .color{
+        color: white;
+       }
+
+        .placeholder{
+            height: 30px;
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            gap: 20px;
+        }
+        .placeholder1{
+            display: flex;
+            background-color: rgb(224, 215, 215);
+            width: 100px;
+            align-items: center;
+            border-radius: 15px;
+            padding-left: 10px;
+        }
+       
+        
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin-right: 20px;
+            flex-wrap: wrap;
+            font-size: 20px;
+        }
+
+        .icone{
+            margin-top: 5px;
+            font-size: 20px;
+        }
+       @media (max-width :816px){
+            header{
+                display: none;
+            }
+       }
+       @media (max-width :816px){
+        ul{
+            display: none;
+        }
+       }
+       @media (max-width :300px){
+        .placeholder1{
+            display: none;
+        }
+       }
+
+       @media(max-width: 550px){
+        .font4{
+            display: none;
+        }
+       }
+
+       .card-0:hover{
+        transform: scale(1.1);
+       }
+
+       .card-1:hover{
+        transform: scale(1.1);
+       }
+
+       .card-2:hover{
+        transform: scale(1.1);
+       }
+
+       .card-3:hover{
+        transform: scale(1.1);
+       }
+
+       .card-4:hover{
+        transform: scale(1.1);
+       }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="image"><img height="100%" src="./image/jordan-removebg-preview.png" alt=""></div>
+        <div>
+            <ul>
+                <li>Find a Store</li>
+                <li>|</li>
+                <li>Help</li>
+                <li>|</li>
+                <li>Join Us</li>
+                <li>|</li>
+                <li>Sign In</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="header2">
+        <div class="image2"><img height="100%" src="./image/nike-removebg-preview.png" alt=""></div>
+        <div>
+            <ul>
+                <li>New & Featured</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+                <li>Sale</li>
+                <li>SNKRS</li>
+            </ul>
+        </div>
+        <div class="placeholder">
+            <div class="placeholder1"><i class="fa-solid fa-magnifying-glass"></i> Search</div>
+            <div class="icone"><i class="fa-regular fa-heart"></i></div>
+            <div class="icone"><i class="fa-solid fa-bag-shopping"></i></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="header3"> 
+            <div>New Styles On Sale: Up To 40% Off </div>
+            <div><a href="">Shop All Our New Markdowns</a></div>
+        </div>
+
+
+        <div class="section-1">
+            <div class="section-1-1 image-section-1"><img height="100%" width="100%" src="https://th.bing.com/th/id/OIP.1aH7m08ThnnOIN2BFJLodQHaDo?w=315&h=171&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt=""></div>
+            <div class="section-1-2 image-section-2"><img width="100%" height="100%" src="https://th.bing.com/th/id/OIP.QXCHAWLTbuj_dO1nG6sDtQHaEK?w=259&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt=""></div>
+        </div>
+
+
+
+        <div class="font">
+            <div class="font1"><b>LEADERS OF THE PACK</b></div>
+            <div>Shop the Nike Air Max Muse in Metallic Oil Green and Air Superfly in Oil Green Leather.</div>
+            <div><button class="button">Shop</button></div>
+        </div>
+
+        <div class="font2"><b>Featured</b></div>
+
+
+        <div class="image3">
+            <div class="background-image-1">
+                <div class="left-1-1">Training Essentials</div>
+                <div class="left-2 "><button class="button-1">Shop</button></div>
+            </div>
+            <div class="background-image-2">
+                <div class="left-1-2">Look Of Football <br> Gato </div>
+                <div class="left-2 "><button class="button-1">Shop</button></div>
+            </div>
+        </div>
+
+        <div class="image3">
+            <div class="background-image-3">
+                <div class="left-1-1">Air Max Dn X LEGO Collection <br>A Brick of Fresh Air</div>
+                <div class="left-2 "><button class="button-1">Shop</button></div>
+            </div>
+            <div class="background-image-4">
+                <div class="left-1-2">Jordan Trunner LX <br> No Misses </div>
+                <div class="left-2 "><button class="button-1">Shop</button></div>
+            </div>
+        </div>
+
+
+        <div class="font7"><b>The Latest</b></div>
+
+
+        <div class="image4">
+            <div class="left-1-3 color">Better Is the Only Choice</div>
+            <div class="color font1 left-2"><b>FC BARCELONA <br>X KOBE</b></div>
+            <div class="color left-2">Designed for athletes who never settle.</div>
+            <div><button class="button-4 left-2">Shop Now</button></div>
+        </div>
+
+            <div class="font7"><b>Shop by Icons</b></div>
+
+
+            <div class="display">
+               <div class="card card-0">
+                    <div class="font3">Air Jordan 1</div>
+               </div>
+                <div class="card-1 card">
+                    <div class="font3">Air Force 1</div>
+               </div>
+                <div class="card-2 card">
+                    <div class="font3">V2K</div>
+               </div>
+                <div class="card-3 card">
+                    <div class="font3"> Metco</div>
+               </div>
+                <div class="card-4 card">
+                    <div class="font3"> Air Max Dn</div>
+               </div>
+            </div>
+
+
+            <div class="display-1">
+                <div class="font7"><b>Outdoor Basketball</b></div>
+                <div class="font4">Shop <button class="button-2"><i class="fa-solid fa-chevron-down fa-rotate-90"></i></button><button class="button-2"><i class="fa-solid fa-chevron-down fa-rotate-270"></i></button></div>
+            </div>
+
+
+            <div class="display">
+
+                <div class="card2">
+                    <div class="image5"><img height="100%" width="100%" src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/h_464,c_limit/4104efc3-a3c7-40c7-9de9-fc42cf6bd50e/aone-ep-aja-wilson-basketball-shoes-x3dpNX.png" alt=""></div>
+                    <div class="font5"><b>A'One EP</b></div>
+                    <div class="font6">A'ja Wilson Basketball Shoes</div>
+                    <div class="font6"><b>MRP : ₹ 9 695.00</b></div>
+                </div>
+
+                 <div class="card2">
+                    <div class="image5"><img height="100%" width="100%" src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/h_464,c_limit/73203df5-8154-4a7c-943c-e09f00c2fb6b/kobe-viii-older-basketball-shoes-3nD2lQ.png" alt=""></div>
+                    <div class="font5"><b>Kobe VIII</b></div>
+                    <div class="font6">Older Kids' Basketball Shoes</div>
+                    <div class="font6"><b>MRP : ₹ 9 695.00</b></div>
+                </div>
+
+                <div class="card2">
+                    <div class="image5"><img height="100%" width="100%" src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/h_464,c_limit/6e61b19a-e8ca-45b3-912c-51ecdb745485/luka-77-pf-navidor-basketball-shoes-MlPLwJ.png" alt=""></div>
+                    <div class="font5"><b>Luka .77 PF 'Navidor'</b></div>
+                    <div class="font6">Basketball Shoes</div>
+                    <div class="font6"><b>MRP : ₹ 8 695.00</b></div>
+                </div>
+            </div>
+
+
+            <div class="font7"><b>Shop By Sport</b></div>
+
+            <div class="display">
+                <div class="card3 card-3-1"><button class="button-3">Running</button></div>
+                <div class="card3 card-3-2"><button class="button-3">Football</button></div>
+                <div class="card3 card-3-3"><button class="button-3">Basketball</button></div>
+            </div>
+    </section>
+
+    <hr>
+
+    <footer>
+        <div class="display-3">
+
+
+            <div class="display-2">
+                <div>
+                      <div class="font8"><b>Resources</b></div>
+                      <div class="font9">Find A Store</div>
+                      <div class="font9">Become A Member</div>
+                      <div class="font9">Running Shoe Finder</div>
+                      <div class="font9">Product Advice</div>
+                      <div class="font9">Send Us Feedback</div>
+                </div>
+                <div>
+                    <div class="font8"><b>Help</b></div>
+                    <div class="font9">Get Help</div>
+                    <div class="font9">Order Status</div>
+                    <div class="font9">Delivery</div>
+                    <div class="font9">Returns</div>
+                    <div class="font9">Payment Options</div>
+                    <div class="font9">Contact Us On Nike.com Inquiries</div>
+                    <div class="font9">Contact Us On All Other Inquiries</div>
+                </div>
+                <div>
+                    <div class="font8"><b>Company</b></div>
+                    <div class="font9">About Nike</div>
+                    <div class="font9">News</div>
+                    <div class="font9">Careers</div>
+                    <div class="font9">Investors</div>
+                    <div class="font9">Sustainability</div>
+                    <div class="font9">Impact</div>
+                    <div class="font9">Report a Concern</div>
+                </div>
+            </div>
+            <div></div>
+
+
+        </div>
+
+        <div class="display-4">
+                <div>© 2025 Nike, Inc. All rights reserved</div>
+                <div>Guides</div>
+                <div>Terms of Sale</div>
+                <div>Terms of Use</div>
+                <div>Nike Privacy Policy</div>
+                <div>Privacy Settings</div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
+

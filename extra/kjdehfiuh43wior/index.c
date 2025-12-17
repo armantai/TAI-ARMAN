@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+
+
+    int i,n=5;
+
+    for (int i=1; i<=n; i++)
+    {
+        for (int j=i; j<=n; j++)
+        {
+           printf("%d",j);
+        }
+        printf("\n");
+    }
+    
+
+
+    return 0;
+}

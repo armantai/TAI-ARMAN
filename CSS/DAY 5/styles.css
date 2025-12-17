@@ -1,0 +1,80 @@
+          .box{
+            border: 1px solid black ;
+            height: 1000px;
+            width: 1000px;
+            margin: auto;
+        }
+
+        .card{
+            border: 1px solid black ;
+            height: 300px;
+            width: 900px;
+            margin: 10px 40px;
+            border-radius: 10px;
+        }
+
+        .card1{
+            border: 1px solid black ;
+            height: 300px;
+            width: 900px;
+            margin: 20px 0px;
+            border-radius: 10px;
+            
+        }
+
+        .card2{
+            border: 1px solid black ;
+            height: 300px;
+            width: 900px;
+            margin: 0px 0px ;
+            border-radius: 10px;
+            
+        }
+
+        h1::first-letter{
+            color: red;
+            font-size: 50px;
+            
+        }
+
+        .font{
+            text-align: center;
+            
+        }
+
+        .text{
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        .text-1{
+             margin: 10px;
+
+        }
+           
+        
+
+        p{
+            background-color: yellow;
+            margin: 10px;
+        }
+
+        .text-2{
+            margin: 50px 10px 50px;
+            background-color: rgb(98, 235, 98);
+            border: 5px solid skyblue;
+            border-radius: 8px;
+            
+            
+
+        }
+
+        .text-3{
+            margin: 30px 10px 50px;
+            background-color: rgb(98, 235, 98);
+            border: 5px solid skyblue;
+            border-radius: 8px;
+            
+            
+
+        }

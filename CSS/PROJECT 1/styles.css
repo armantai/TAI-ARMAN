@@ -1,0 +1,146 @@
+.box{
+    border: 1px solid black;
+    height: 1750px;
+    width:1100px;
+    
+
+}
+
+.box1{
+    border: 1px solid black;
+    height: 200px;
+    width: 1000px;
+    margin:5px 30px;
+    
+}
+
+.font{
+   
+    font-size: 20px;
+    padding: 20px;
+}
+
+.font1{
+   
+    font-size: 15px;
+    
+ 
+}
+
+
+
+.font3{
+   
+    font-size: 10px;
+    float: left;
+
+   
+        
+ 
+}
+
+.font2{
+   
+      font-size: 15px;
+      float: left;
+ 
+}
+
+.font6{
+    font-size: 13px;
+    float: left;
+}
+
+.prise{
+   
+      font-size: 15px;
+      float: left;
+      margin: 10px;
+       text-decoration: line-through;
+ 
+}
+
+
+.placeholder{
+    border-radius: 5px;
+    
+
+}
+
+.image{
+width: 200px;
+height: 150px;
+float: right;
+margin: -80px 20px;
+display: inline-block;
+
+}
+
+.superman{
+    font-size: 15px;
+    margin: 1px 35px;
+
+}
+
+
+
+.card{
+    border: 1px solid black;
+    width: 210px;
+    height: 450px;
+    margin: 25px;
+    border-radius: 15px;
+     display: flex;
+    float: inline-start;
+}
+
+.image1{
+   width: 150px;
+   height: 200px;
+   text-align: center;
+   margin: auto;
+   
+}
+
+.sale{
+    height: 20px;
+    width: 30px;
+    background-color: red;
+    color: white ;
+    display: block;
+   justify-content: center;
+   margin: -90px -10px 10px 0px;
+   
+   
+}
+
+.offer{
+    background-color: green;
+    color: white ;
+    display: block;
+    justify-content: center;
+    height: 20px;
+    width: 30px;
+}
+
+.font4{
+   
+    font-size: 15px;
+      float: left;
+      text-decoration: line-through;
+    
+}
+
+.select{
+    border-radius: 5px;
+    margin-right: 30px;
+    float: right;
+
+
+}
+
+
+
+
+
+

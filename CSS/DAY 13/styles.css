@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border: 10px solid black;
+    height: 950px;
+}
+
+h1{
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box1{
+    border: 1px solid black;
+    height: 80px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2{
+    border: 0px solid black;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    margin-top: 50px;
+}
+
+.image{
+    height: 50%;
+}
+
+.font1{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.font2{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.font3{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.color{
+    color: rgb(255, 68, 0);
+    margin-top: 10px;
+}
+
+.prise{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.line{
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+.button{
+    background-color: blue;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.button1{
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.button2{
+    background-color: rgb(203, 58, 14);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 600px) {
+        .box1 {
+          flex-basis: 100%;
+        }
+      }
+
+      @media (min-width: 601px) and (max-width: 900px) {
+        .box1 {
+          flex-basis: 45%;
+        }
+      }
+
+      @media (min-width: 901px) {
+        .box1 {
+          flex-basis: 18%;
+        }
+      }

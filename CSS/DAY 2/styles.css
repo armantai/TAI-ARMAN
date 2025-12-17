@@ -1,0 +1,18 @@
+.align{
+   text-align: center; 
+}
+
+.front{
+    text-align: center;
+    font-style: italic;
+}
+
+.underline{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.word{
+    text-align: center;
+    font-size: 10px;
+}
