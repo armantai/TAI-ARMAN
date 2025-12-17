@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        .display-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media(max-width:650px){
+            .display-1{
+                display: none;
+            }
+        }
+        .display-2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .display-3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .font1{
+            font-size: 20px;
+        }
+        .font2{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 320px;
+            font-family: cursive;
+        }
+        .font3{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+            margin-top: 30px;
+        }
+        .font4{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .font5{
+            color: white;
+            margin-top: 50px;
+            margin-left: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .background{
+            background-color: black;
+            color: white;
+            height: 50px;
+        }
+        .background1{
+            height: 100px;
+        }
+        .background-image{
+            background-image: url(https://media.tommy.com/us/static/images/scheduled_marketing/2025/08/07_HP_FullTile01_dt.jpg);
+            height: 1000px;
+            max-width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            cursor: pointer;
+        }
+        .ul{
+            text-decoration: underline;
+        }
+        .ul:hover{
+            text-decoration: none;
+        }
+      
+        .ul1{
+            font-size: 20px;
+        }
+        .ul1:hover{
+            text-decoration: underline;
+        }
+        @media(max-width:950px){
+            .ul1{
+                display: none;
+            }
+        }
+        .image{
+            height: 50px;
+            max-width: 200px;
+        }
+        @media(max-width:300px){
+            .image{
+                margin-left: 0px;
+            }
+        }
+        .gap-50{
+            gap: 50px;
+            font-size: 20px;
+        }
+        @media(max-width:300px){
+            .gap-50{
+               display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="display-1 background">
+            <div class="font1">EXTRA 20% Off Select Styles</div>
+        <div class="font1">
+            <ul>
+                <li class="ul">Men</li>
+                <li class="ul">Women</li>
+                <li class="ul">Kids</li>
+                <li class="ul">Details</li>
+            </ul>
+        </div>
+    </header>
+
+    <header class="display-2 background1">
+        <div class="image"><img height="100%" width="100%" src="https://th.bing.com/th/id/OIP.fPmkEPefka8I8lAMJbQosAHaE1?w=288&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt=""></div>
+        <div>
+            <ul>
+            <li class="ul1">New</li>
+            <li class="ul1">Men</li>
+            <li class="ul1">Women</li>
+            <li class="ul1">Kids</li>
+            <li class="ul1">Shoes & Accessories</li>
+            <li class="ul1">Tommy Jeans</li>
+            <li class="ul1">Sale</li>
+        </ul>
+    </div>
+        <div class="gap-50">
+           <ul>
+             <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-user"></i></li>
+            <li><i class="fa-solid fa-bag-shopping"></i></li>
+           </ul>
+        </div>
+    </header>
+
+    <section class="background-image">
+        <div class="font2">New Arrivals</div>
+        <div class="font3">Prep's Cool</div>
+        <div class="font4">Vintage varsity vibes meet modern sportswear <br> in our latest collection for fall.</div>
+        <div class="display-3">
+            <div class="font5">Men's New Arrivals</div>
+            <div class="font5">Women's New Arrivals</div>
+        </div>
+    </section>
+    
+
+</body>
+</html>

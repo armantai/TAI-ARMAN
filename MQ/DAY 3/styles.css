@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border: 5px solid black;
+    height: 1500px;
+}
+
+.box1{
+    border: 0px solid black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box2{
+    border: 0px solid black;
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box3{
+    border: 1px solid black;
+    height: 800px;
+    width: 24%;
+}
+
+.font1{
+    font-size: 20px;
+    margin-left: 500px;
+}
+
+.font2{
+    margin-left: 400px;
+    color: rgb(0, 208, 255);
+}
+
+.font3{
+    font-size: 20px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.font4{
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.font5{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 220px;
+}
+
+.font6{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.font7{
+    font-size: 40px;
+    margin-left: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.font8{
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 250px;
+}
+
+
+ul{
+    margin-top: 20px;
+    margin-left: 10px;
+
+    list-style: none;
+}
+
+li{
+    margin-top: 20px;
+}
+
+sup{
+    font-size: 15px;
+}
+
+.font9{
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 220px;
+    display: flex;
+    color: rgb(44, 93, 75);
+}
+
+.font10{
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.font11{
+    font-size: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.placeholder{
+    margin-left: 50px;
+}
+
+select{
+    border: 1px solid white;
+    height: 22px;
+}
+
+
+.button1{
+    border: 1px solid black;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: white;
+    background-color: rgb(44, 93, 75);
+}
+
