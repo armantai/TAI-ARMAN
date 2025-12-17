@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>COUNT DOWN</h1>
+            <div class="card1">
+                <h1 id="display">0</h1>
+                <h2>SECOUND</h2>
+            </div>
+            <div class="input">
+                <input type="number" name="" id="input" placeholder="Enter your number">
+            </div>
+            <p id="p"></p>
+            <div class="button">
+                <button id="statbtn">Stat</button>
+                <button id="stopbtn">Stop</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        let time;
+        let timeleft;
+
+        const statbtn = document.getElementById("statbtn")
+        const stopbtn = document.getElementById("stopbtn")
+        const display = document.getElementById("display")
+        const input = document.getElementById("input")
+
+
+        statbtn.addEventListener("click", () => {
+
+            timeleft = parseInt(input.value)
+
+            if (!timeleft || timeleft <= 0) {
+                alert("Please enter a valid number");
+                return;
+            }
+
+            p.textContent = ""
+            display.innerText = timeleft
+
+
+            clearInterval(time)
+            timer = setInterval(() => {
+                timeleft--;
+                display.innerText = timeleft
+
+                if (timeleft <= 0) {
+                    clearInterval(timer)
+                    document.getElementById("p").textContent = "Time's up"
+                }
+
+            }, 1000)
+
+        })
+
+
+        stopbtn.addEventListener("click", () => {
+                
+        })
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

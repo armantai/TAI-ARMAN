@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hello World</h1>
+    </header>
+    <section class="section">
+        <div class="section-image">
+            <img src="" id="image" alt="">
+        </div>
+        <div class="image1">
+            <div style="display: flex; justify-content: space-between; padding-left: 20px; padding-right: 20px;">
+                <button id="prev"><i class="fa-solid fa-angle-left" style="color: #fff;"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right" style="color: #fff;"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script>
+        let prev = document.getElementById("prev")
+        let next = document.getElementById("next")
+        let image = document.getElementById("image")
+
+        let array = [1, 2, 3]
+        let count = 0
+
+        let images=[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxpJb3LkpOXRMNo9y0TzO-xiVr3pBjOgm7tg&s",
+            "https://www.shutterstock.com/image-photo/tom-jerry-american-animated-series-260nw-2600511385.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCl0hHfoHAtiGfjq2Cyi7f0U1WLj8e9kk5A&s"
+        ]
+        function show(array) {
+            image.src = images[count]
+            image.style.width = "100%"
+            image.style.height = "100%"
+        }
+        show(array)
+
+        next.addEventListener("click", function () {
+            count++
+
+            if (count == array.length) {
+                count = 0
+            }
+            show(array)
+        })
+
+        prev.addEventListener("click", function () {
+
+            if (count == 0) {
+                count = array.length
+            }
+            count--
+            show(array)
+        })
+
+        setInterval(() => {
+        count++
+        if (count == images.length) {
+            count = 0
+        }
+        show()
+    }, 3000); 
+    </script>
+</body>
+
+</html>
